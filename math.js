@@ -5,6 +5,9 @@ numbers.reduce(suma);
 const resta = (acc, cv) => acc - cv;
 numbers.reduce(resta);
 
+const producto = (acc, cv) => acc * cv;
+numbers.reduce(producto);
+
 const exp = (n) => {
   return numbers.map((number)=> number ** n);
 }
