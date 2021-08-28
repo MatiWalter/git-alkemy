@@ -1,8 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App';
+import {BrowserRouter as Router,Switch,Route,Redirect} from 'react-router-dom';
+import { Login } from './Login';
 
 ReactDOM.render(
-  <App />,
+  <React.StrictMode>
+    <AlkemyApp />
+  </React.StrictMode>,
   document.getElementById('root')
 );
+
+const AlkemyApp = () => {
+
+  use
+
+  return (
+    <Router>
+      <Navbar />
+      <div>
+        <Switch>
+          <Route exact path='/login' component={Login} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
