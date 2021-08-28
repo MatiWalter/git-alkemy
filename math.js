@@ -1,13 +1,20 @@
-const numbers = [1,2,3,4,5,6,7,8,9,10];
-const suma = (acc, cv) => acc + cv;
-numbers.reduce(suma);
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+const sum = (acc, cv) => acc + cv;
+numeros.reduce(sum);
 
-const resta = (acc, cv) => acc - cv;
-numbers.reduce(resta);
+const sub = (acc, cv) => acc - cv;
+numeros.reduce(sub);
 
-const producto = (acc, cv) => acc * cv;
-numbers.reduce(producto);
+const power = (acc, cv) => acc * cv;
+numeros.reduce(power);
 
 const exp = (n) => {
-  return numbers.map((number)=> number ** n);
+  return n.map((number)=> number ** n);
 }
+
+const n = [312,32,643,78,69,45,97];
+n.reduce(sub);
+n.reduce(sum);
+n.reduce(power);
+
+console.log(exp(n));
