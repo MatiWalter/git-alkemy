@@ -5,3 +5,5 @@ alert(nombre);
 
 const nombre1='Maria';
 alert('Alumna IT: '+ nombre1);
+
+
