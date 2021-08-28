@@ -5,16 +5,15 @@ numeros.reduce(sum);
 const sub = (acc, cv) => acc - cv;
 numeros.reduce(sub);
 
-const power = (acc, cv) => acc * cv;
-numeros.reduce(power);
+const multiplicar = (acc, cv) => acc * cv;
+numbers.reduce(multiplicar);
 
 const exp = (n) => {
-  return n.map((number)=> number ** n);
+  return numbers.map((number)=> number ** n);
 }
 
-const n = [312,32,643,78,69,45,97];
-n.reduce(sub);
-n.reduce(sum);
-n.reduce(power);
+let a =9
+let b =12
+let c = a+b
+console.log(c)
 
-console.log(exp(n));
